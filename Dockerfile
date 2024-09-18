@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim as builder
 WORKDIR /app
 
 # Sao chép file JAR từ máy chủ vào trong container
-COPY target/your-app.jar app.jar
+COPY target/postman-0.0.1-SNAPSHOT.jar app.jar
 
 # Giai đoạn chạy ứng dụng
 FROM openjdk:17-jdk-slim
