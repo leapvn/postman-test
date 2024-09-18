@@ -37,4 +37,4 @@ jobs:
         run: npm install -g newman
 
       - name: Run Postman Tests
-        run: newman run LEAP.postman_collection.json --env-var "baseUrl=http://localhost:8080"
+        run: newman run automation-test/LEAP.postman_collection.json --env-var "baseUrl=http://localhost:8080"
